@@ -1,0 +1,30 @@
+
+# Ambiente virtual
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Credenciais e variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Dados e arquivos sensíveis
+data/
+
+# Builds e arquivos compactados
+build/
+dist/
+*.zip
+
+# Logs
+*.log
+
+# IDE
+.pycharm/
+.idea/
