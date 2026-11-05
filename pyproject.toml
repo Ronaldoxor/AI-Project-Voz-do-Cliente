@@ -1,0 +1,15 @@
+[project]
+name = "voz-do-cliente-ai"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["boto3", "awswrangler", "pandas", "pyarrow", "pydantic>=2", "python-dotenv"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+app = ["streamlit"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
