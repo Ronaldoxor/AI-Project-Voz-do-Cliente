@@ -1,0 +1,20 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ChamarModelosBedrock",
+      "Effect": "Allow",
+      "Action": "bedrock:InvokeModel",
+      "Resource": [
+        "arn:aws:bedrock:*::foundation-model/*",
+        "arn:aws:bedrock:us-east-1:ACCOUNT_ID:inference-profile/*"
+      ]
+    },
+    {
+      "Sid": "ConsultarIndiceVetorial",
+      "Effect": "Allow",
+      "Action": ["s3vectors:QueryVectors", "s3vectors:GetVectors"],
+      "Resource": "arn:aws:s3vectors:us-east-1:ACCOUNT_ID:bucket/VECTOR_BUCKET/index/reviews"
+    }
+  ]
+}
